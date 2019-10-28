@@ -1,0 +1,447 @@
+/* 头部导航 */
+body{
+    background: #f1f1f1;
+}
+.welcome{
+    font-size: 20px;
+    float: left;
+    line-height: 40px;
+    padding-right: 20px;
+}
+.relogin{
+    color: whitesmoke;
+    float: left;
+    font-size: 15px;
+    color:#f65a8a;
+    line-height: 40px;
+}
+#h-wrap{
+    width: 100%;
+    background: #333333;
+    position: fixed;
+    overflow: hidden;
+    z-index: 99;
+}
+.head{
+    height: 40px;
+    margin:auto;
+}
+.head{
+    width: 1100px;
+}
+.logo{
+    overflow: hidden;
+    float: left;
+}
+.logo .welcome{
+    color:white;
+}
+#starlist{
+    height: 100%;
+    float: right;
+}
+#starlist li{
+    float: left;
+    display: block;
+    padding: 0 0 0 40px;
+    font-size: 16px;
+    line-height: 46px;
+}
+li a{
+    color: #FFF;
+}
+li a:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+#selected{
+    color:#f65a8a;
+}
+/* b-wrap */
+#b-wrap{
+    width: 100%;
+}
+.list-pic{
+    width: 1100px;
+    height:155px ;
+    margin:20px auto;
+    overflow: hidden;
+    position:relative;
+    margin-top:70px;
+}
+.list-pic ul li{
+    float: left;
+    width:355px;
+    height: 155px;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.list-pic ul li:nth-of-type(3){
+   right: -40px;
+}
+.list-pic ul li:nth-of-type(2){
+    right: -20px;
+ }
+.list-pic ul li a img{
+    display: block;
+    width: 100%;
+    transition: all .5s ease;
+    margin: auto;;
+}
+.list-pic ul li span{
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    color: #FFF;
+    width: 355px;
+    height: 30px;
+    left:0;
+    right: 0;
+    top:113px;
+    display: block;
+    padding: 0 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 30px;
+    font-size: 14px;
+}
+.list-pic ul li:hover img{
+    transform: scale(1.15,1.1);
+}
+/* 文章 */
+#c-wrap{
+    width: 100%;
+}
+.content{
+    width: 1100px;
+    margin: auto;
+    min-height: 500px;
+    position: relative;
+}
+.left{
+    width:770px ;
+    float: left;
+    
+}
+.left h1{
+    padding: 0 10px;
+    line-height: 40px;
+    height: 40px;
+    font-size: 18px;
+    border-bottom: #000 2px solid;
+    position: relative;
+    background: white;
+}
+.left .list-con{
+    border-top: 1px solid #000000;
+    padding: 0 10px 0 10px;
+    margin-bottom: 20px;
+    height: 621px;
+    background: white;
+}
+.list-con ul li{
+    float: left;
+    width: 247px;
+    height: 300px;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding:0 20px;
+}
+.list-con ul li:nth-of-type(3),.list-con ul li:nth-of-type(6){
+    border-right: 0;
+}
+.list-con ul li:nth-of-type(4),.list-con ul li:nth-of-type(5),.list-con ul li:nth-of-type(6){
+    border-bottom: 0;
+}
+.list-con ul li:nth-of-type(1),.list-con ul li:nth-of-type(2),.list-con ul li:nth-of-type(3){
+    margin-top: 20px;
+}
+.tpic{
+    width: 173.167px;
+    height: 100px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.list-con ul li img{
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #CCC;
+    display: inline-block;
+    height: auto;
+    margin: auto;
+    vertical-align: middle;
+    transition: all .5s ease-out .1s;
+    margin-top: 20px;
+}
+.list-con ul li b{
+    display: block;
+    width: 180.167px;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    margin:10px 0;
+    margin-left: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.list-con ul li span{
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    font-size: 14px;
+    height: 62px;
+}
+.list-con ul li .readmore{
+    margin: 10px 0 0 0;
+    color: #096;
+    display: block;
+}
+.list-con ul li:hover{
+    box-shadow: 2px 4px 6px #ccc;
+}
+.list-con ul li:hover img{
+    transform: scale(1.05,1.1);
+}
+/* 自我简介 */
+.right{
+    width: 308px;
+    float: right;
+}
+.right .me{
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.me h2{
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    font-size: 25px;
+}
+.me em,.links em,.weixin em{
+    display: inline-block;
+    border: 1px solid black;
+    width: 50px;
+}
+ .fir-line{
+    position: absolute;
+    top: 40px;
+    left: 25px;
+}
+.sec-line{
+    position: absolute;
+    top: 40px;
+    right: 25px;
+}
+.person{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50px;
+    margin: auto;
+}
+.ab-con{
+    line-height: 30px;
+    padding: 10px;
+}
+.ab-con span{
+    display: block;
+    background: #f6f6f6;
+    margin: 5px 0;
+    padding-left: 10px;
+    border-radius: 5px;
+    line-height: 30px;
+    font-size: 16px;
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px;
+}
+.search{
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+.input_text{
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    width: 70%;
+    height: 26px;
+    line-height: 26px;
+    background-color: #f2f2f2;
+    float: left;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.input_submit{
+    background-color: #333;
+    color: #FFF;
+    float: left;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+}
+.links{
+    width: 100%;
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+    position: relative;
+}
+.ab_title{
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    font-size: 25px;
+}
+.links ul{
+    padding: 0 30px 30px 30px;
+}
+.links ul li{
+    line-height: 24px;
+    border: 1px solid #ccc;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+.links ul li a {
+    color: black;
+    font-size: 16px;
+}
+.weixin{
+    width: 308px;
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+    height: 382px;
+    position: relative;
+}
+.weiixn .ab_title{
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    color: black;
+}
+.weixin ul img{
+    margin-left: 20px;
+}
+footer p{
+    width: 1100px;
+    margin: auto;
+    color: #a5a4a4;
+    text-align: center;
+    padding: 20px 0;
+    height: 65px;
+}
+#f-wrap{
+    width: 100%;
+    height:62px;
+    background: #333;
+}
+.newlog{
+    overflow: hidden;
+    background: white;
+    width: 100%;
+    clear: both;
+    border-radius: 10px;
+    min-height: 42px;
+    margin: 20px 0;
+}
+.newlog h1{
+    padding: 0 10px;
+    line-height: 40px;
+    height: 40px;
+    font-size: 18px;
+    border-bottom: #000 2px solid;
+    position: relative;
+}
+.newlog .logtitle{
+    margin: 10px 0;
+    height: 30px;
+    width: 770px;
+}
+.logtitle a{
+    display: block;
+    color:black;
+    font-size: 16px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+.blogpic {
+    overflow: hidden;
+    width: 30%;
+    max-height: 100px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.blogpic img{
+    width: 100%;
+}
+.bloginfo p {
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.autor {
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    margin: 20px 0 0 0;
+    display: inline-block;
+    color: #838383;
+    font-size: 12px;
+}
+.autor span {
+    margin: 0 10px 0 0;
+    padding-left: 20px;
+}
+.f_r {
+    float: right;
+}
+.autor span a {
+    color: #096;
+}
+.more{
+    font-size: 14px;
+}
+.lm {
+    background: url(../images/pensou.jpg) no-repeat left center;
+}
+.dtime {
+    background: url(../images/clock.jpg) no-repeat left center;
+}
+.viewnum {
+    background: url(../images/shou.jpg) no-repeat left center;
+}
+.pingl {
+    background: url(../images/heart.jpg) no-repeat left center;
+}
+.btns{
+    margin-left: 300px;
+}
+.btns li a{
+    color:  #096;;
+}

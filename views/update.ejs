@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+	<script src="/javascripts/jq.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+	<script src="/javascripts/xheditor/xheditor-1.2.2.min.js"></script>
+	<script src="/javascripts/xheditor/xheditor_lang/zh-cn.js"></script>
+</head>
+<body>
+	<h1>修改信息</h1>
+	<div class="container">
+		<div class="form-group">
+			<label for="username">标题</label>
+			<input type="text" class="form-control" id="title" placeholder="title" value="<%-x_detail.title %>">
+		</div>
+		<div class="form-group">
+			<label for="content">内容</label>
+			<textarea  id="con" cols="30" rows="10" class="form-control xheditor"><%-x_detail.con %></textarea>
+		</div>
+	</div>
+	<button class="btn btn-success fabu" id="<%-x_detail._id %>">发布</button>
+</body>
+<script src="/javascripts/fwb.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".fabu").click(function () {
+			$.ajax({
+					type:'post',
+					url:'/users/update',
+					data:{
+						id:$(this).attr('id'),
+						title: $("#title").val(),
+						con: $("#con").val()
+					},
+					success:function(data){
+						console.log(data);
+						location.href='/boke';
+						//alert('更新')
+					}
+				})
+		})
+	})
+</script>
+</html>

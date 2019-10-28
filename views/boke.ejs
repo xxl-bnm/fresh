@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+	<link rel="stylesheet" href="/stylesheets/common.css">
+	<link rel="stylesheet" href="/stylesheets/boke.css">
+	<script src="/javascripts/jq.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+	<script src="/javascripts/xheditor/xheditor-1.2.2.min.js"></script>
+	<script src="/javascripts/xheditor/xheditor_lang/zh-cn.js"></script>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1441487_u5fldtgkd4s.css">
+</head>
+<body>
+<!-- nav导航 -->
+<div id="h-wrap">
+	<div class="head">
+		<div class="logo">博主归来</div>
+		<div class="search">
+			<input name="keyboard" id="keyboard" class="input_text" value="请输入关键字" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字'}" type="text">
+			<button name="Submit" class="input_submit" >搜索</button>
+		</div>
+		<ul id="starlist">
+			<li><a href="/" id="selected">网站首页</a></li>
+			<li class=""><a href="/about/">关于我</a></li> 
+			<li class=""><a href="/blog/">博客日记</a></li> 
+			<li class=""><a href="/share/">模板分享</a></li> 
+			<li class=""><a href="/study/">学无止境</a></li> 
+			<li onclick="location.href='/liuyan'"><a>留言</a></li> 
+		</ul>
+	</div>
+</div>
+<!-- 发布 -->
+<div class="container">
+	<div class="form-group">
+		<label for="username">标题</label>
+		<input type="text" class="form-control" id="title" placeholder="title">
+	</div>
+	<div class="form-group">
+		<label for="content">内容</label>
+		<textarea  id="con" cols="30" rows="10" class="form-control xheditor"></textarea>
+	</div>
+	<button class="btn btn-success fabu">发布</button>
+</div>
+<!--从后台获取数据 来展示发布信息,不能写死tr由data决定 -->
+<% data.map(function(item,i){ %>
+	<div class="con">
+		<div class="newlog">
+			<h1>最新文章</h1>
+			<div class="logtitle">
+				<a href="/detail?id=<%-item._id %>"><%-item.title%></a>
+			</div>
+			<div class="bloginfo"><span class="blogpic"><a href="/detail?id=<%-item._id %>" title="女程序员职业生涯该如何发展？"><img src="http://www.yangqq.com/d/file/news/life/2014-07-10/43baa4c7c03ed66bae98696de5ebc64e.jpg" alt="女程序员职业生涯该如何发展？"></a></span>
+				<p><%-item.con%>...</p>
+			</div>
+			<div class="autor">
+				<span class="lm f_l"><a href="/share/1/" title="目录1" target="_blank" class="classname">目录1</a></span>
+				<span class="dtime f_l">2018-08-23</span>
+				<span class="viewnum f_l">浏览（<a href="/">11</a>）</span>
+				<span class="pingl f_l">喜欢（ 1 ）</span>
+				<span class="iconfont icon-icon7 del" id="<%-item._id %>">删除</span>
+				<span class="iconfont icon-xiugai update"><a href="/update?id=<%-item._id %>">修改</a></span>
+				<span class="f_r"><a href="/detail?id=<%-item._id %>" class="more">阅读原文&gt;&gt;</a></span>
+			</div>
+		</div>
+	</div>
+<% }) %>
+<div class="boot">
+	<ul class="pagination">
+			<li><a href="/boke?pageNo=<%-pageNo<=1?1:parseInt(pageNo)-1 %>">&laquo;</a></li>
+			<% if(page>5) { %>
+				<li class="active"><a href="/boke?pageNo=1">1</a></li>
+				<li><a href="/boke?pageNo=2">2</a></li>
+				<li><a href="#">...</a></li>
+				<li><a href="boke?pageNo=<%-page-1 %>"><%-page-1 %></a></li>
+				<li><a href="boke?pageNo=<%-page %>">  <%-page %>   </a></li>
+			<%} else{ %>
+				<% for(let i =0;i<page;i++){ %>
+					<li><a href="/boke?pageNo=<%-i+1 %>"><%-i+1 %></a></li>
+				<% } %>
+			<% } %>
+			<li><a href="/boke?pageNo=<%-pageNo>=page?page:parseInt(pageNo)+1 %>">&raquo;</a></li>
+		</ul>
+</div>
+<!-- footer -->
+<div id="f-wrap">
+	<footer>
+		<p>Design by <a href="/">杨青个人博客</a> <a href="/">蜀ICP备11002373号-1</a></p>
+	</footer>
+</div>	
+</body>
+<script src="/javascripts/fwb.js"></script>
+<script type="text/javascript">
+	// 把发布的信息提交到对应的路由路径users里边，添加到数据库某个集合中
+	$(function () {
+		$(".fabu").click(function () {
+//展示信息
+			$.ajax({
+				type: "post",
+				url: "/users/boke",
+				data: {
+					title: $("#title").val(),
+					con: $("#con").val()
+				},
+				success: function (data) {
+					//console.log(data);
+					alert(data.msg);
+					location.href='/boke';
+				}
+			});
+		})
+//删除信息
+		$(".del").click(function(){
+			$.ajax({
+				type:'post',
+				url:'/users/del',
+				data:{
+					id:$(this).attr('id')
+				},
+				success:function(data){
+					//console.log(data);
+					alert(data.msg);
+					location.href='/boke';
+				}
+			})
+		})
+//查找
+		$(".sou").click(function(){
+			console.log($(this).prev().val());
+			$.ajax({
+				type:"post",
+				url:'users/find',
+				data:{
+					title:$(this).prev().val()
+				},
+				success:function(data){
+					console.log(data);
+					alert(data.msg);
+					//location.href='/boke';
+				}
+			})
+		})
+	})
+</script>
+</html>

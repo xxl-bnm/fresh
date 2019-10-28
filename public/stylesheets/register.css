@@ -1,0 +1,11 @@
+.regist{
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+    margin: auto;
+}
+.regist .name{
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

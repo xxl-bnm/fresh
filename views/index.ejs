@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/stylesheets/common.css">
+	<link rel="stylesheet" href="/stylesheets/index.css">
+  	<script src="/javascripts/jq.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+	  <!-- 解析变量结构 -->
+	  
+		<!-- <button class="test">测试</button>
+<!-- nav导航 -->
+<div id="h-wrap">
+	<div class="head">
+		<div class="logo">
+				<% if(username){ %>
+					<h1 class="welcome">欢迎<%-username %>博主</h1>
+					<p onclick="location.href='/relogin'" class="relogin">退出登录</p>  
+			  <% } else{ %>
+					<button class="btn btn-success" onclick="location.href='/login'">登陆</button>  
+					<button class="btn btn-primary" onclick="location.href='/register'">注册</button>   
+		
+					<% } %>
+				<!-- <button class="btn btn-success" onclick="location.href='boke'">发布</button>   -->
+		</div>
+		<ul id="starlist">
+			<li><a href="/" id="selected">网站首页</a></li>
+			<li class=""><a href="/about/">关于我</a></li> 
+			<li class=""><a href="/boke">博客日记</a></li> 
+			<li class=""><a href="/share/">模板分享</a></li> 
+			<li class="" onclick="location.href='/boke'"><a>发表文章</a></li> 
+			<li class="" onclick="location.href='/liuyan'"><a>留言</a></li> 
+		 </ul>
+	</div>
+</div>
+<div id="b-wrap">
+	<div class="list-pic">
+			<ul>
+					<li>
+						<a href="/share/1/3.html" target="_blank"><img src="http://www.yangqq.com/d/file/jstt/bj/2018-06-29/3f0b6da48a6fd4e626a021ff7bd0d74f.jpg"></a>
+						<span>【匆匆那些年】总结个人博客经历的这四年</span>
+					</li>
+			   
+					<li>
+						<a href="/study/1/2.html" target="_blank"><img src="http://www.yangqq.com/d/file/news/life/2018-04-27/762f99f369ae786f970477feeb3b9d77.jpg"></a>
+						<span>个人博客，属于我的小世界！</span></li>
+			   
+					<li>
+						<a href="/blog/1.html" target="_blank"><img src="http://www.yangqq.com/d/file/news/life/2018-06-17/917d732926d79cc2ae1012831ce51d1e.jpg"></a>
+						<span>安静地做一个爱设计的女子</span></li>
+			 </ul>
+	</div>
+</div>
+<div id="c-wrap">
+	<div class="content">
+		<div class="left">
+			<h1>特别推荐</h1>
+			<div class="list-con">
+				<ul>
+					<li>
+						<div class="tpic"><img src="http://www.yangqq.com/d/file/news/life/2014-07-10/43baa4c7c03ed66bae98696de5ebc64e.jpg" title="女程序员职业生涯该如何发展？"></div>
+						<b>女程序员职业生涯该如何发展？</b>
+						<span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
+						<a href="/share/1/6.hmtl"class="readmore">+阅读文章</a>
+					</li>
+					<li>
+						<div class="tpic"><img src="http://www.yangqq.com/d/file/news/life/2018-06-29/75842f4d1e18d692a66c38eb172a40ab.jpg" title="作为一个设计师,如果遭到质疑你是否能恪守自己的原则?"></div>
+						<b>女程序员职业生涯该如何发展？</b>
+						<span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
+						<a href="/share/1/6.hmtl"class="readmore">+阅读文章</a>
+					</li>
+					<li>
+						<div class="tpic"><img src="http://www.yangqq.com/d/file/news/s/2018-07-28/95d1b1577a8a7aa4fe3893f2502617e9.jpg" title="我是怎么评价自己的？"></div>
+						<b>女程序员职业生涯该如何发展？</b>
+						<span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
+						<a href="/share/1/6.hmtl"class="readmore">+阅读文章</a>
+					</li>
+					<li>
+						<div class="tpic"><img src="http://www.yangqq.com/d/file/jstt/bj/2018-06-29/3f0b6da48a6fd4e626a021ff7bd0d74f.jpg" title="【匆匆那些年】总结个人博客经历的这四年"></div>
+						<b>女程序员职业生涯该如何发展？</b>
+						<span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
+						<a href="/share/1/6.hmtl"class="readmore">+阅读文章</a>
+					</li>
+					<li>
+						<div class="tpic"><img src="http://www.yangqq.com/d/file/news/life/2018-04-27/762f99f369ae786f970477feeb3b9d77.jpg" title="个人博客，属于我的小世界！"></div>
+						<b>女程序员职业生涯该如何发展？</b>
+						<span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
+						<a href="/share/1/6.hmtl"class="readmore">+阅读文章</a>
+					</li>
+					<li>
+						<div class="tpic"><img src="http://www.yangqq.com/d/file/news/life/2018-06-17/917d732926d79cc2ae1012831ce51d1e.jpg" title="安静地做一个爱设计的女子"></div>
+						<b>女程序员职业生涯该如何发展？</b>
+						<span>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，...</span>
+						<a href="/share/1/6.hmtl"class="readmore">+阅读文章</a>
+					</li>
+				</ul>
+			</div>
+			<div class="newlog">
+				<h1>最新文章</h1>
+				<div class="logtitle">
+					<a href="/share/1/6.html" target="_blank">女程序员职业生涯该如何发展？</a>
+				</div>
+				<div class="bloginfo"><span class="blogpic"><a href="/share/1/6.html" title="女程序员职业生涯该如何发展？"><img src="http://www.yangqq.com/d/file/news/life/2014-07-10/43baa4c7c03ed66bae98696de5ebc64e.jpg" alt="女程序员职业生涯该如何发展？"></a></span>
+					<p>四年的时间，学习专业课程，临近毕业恨不能找个简单轻松的工作远离编程，可是微薄的工资跟专业相比，找个专业的工作工资能高好几倍。好不容易找到个跟专业符合的工作，五年...</p>
+				</div>
+				<div class="autor"><span class="lm f_l"><a href="/share/1/" title="目录1" target="_blank" class="classname">目录1</a></span><span class="dtime f_l">2018-08-23</span><span class="viewnum f_l">浏览（<a href="/">11</a>）</span><span class="pingl f_l">喜欢（ 1 ）</span><span class="f_r"><a href="/share/1/6.html" class="more">阅读原文&gt;&gt;</a></span></div>
+			</div>
+		</div>
+<!-- 自我介绍 -->
+		<div class="right">
+			<div class="me">
+				<em class="fir-line"></em><h2>关于我</h2><em class="sec-line"></em>
+				<img src="/images/top.jpg" class="person">
+				<div class="ab-con">
+					<span>网名：shiraly</span>
+					<span>职业：Web开发</span>
+					<span>籍贯：河南</span>
+					<span>邮箱：869582448@qq.com</span>
+				</div>
+			</div>
+<!-- 搜搜 -->
+			<div class="search">
+				<input name="keyboard" id="keyboard" class="input_text" value="请输入关键字" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字'}" type="text">
+				<input name="show" value="title" type="hidden">
+				<input name="tempid" value="1" type="hidden">
+				<input name="tbname" value="news" type="hidden">
+				<button name="Submit" class="input_submit" >搜索</button>
+			</div>
+			<div class="links">
+					<em class="fir-line"></em><h2 class="ab_title">友情链接</h2><em class="sec-line"></em>
+					<ul>
+						<li><a href="http://www.yangqq.com" title="杨青个人博客">个人博客</a></li>      
+					</ul>
+			</div>
+			<div class="weixin">
+					<em class="fir-line"></em><h2 class="ab_title">微信关注</h2><em class="sec-line"></em>
+				<ul>
+					<img src="/images/wei.jpg">
+				</ul>
+			</div>
+		</div>
+		<ul class="pagination btns">
+			<li><a href="#">&laquo;previous</a></li>
+			<li><a href="/boke">Next&raquo;</a></li>
+		</ul>
+	</div>
+<!-- 分页 -->
+
+</div>
+<!-- footer -->
+<div id="f-wrap">
+	<footer>
+		<p>Design by <a href="/">杨青个人博客</a> <a href="/">蜀ICP备11002373号-1</a></p>
+	</footer>
+</div>
+		<script type="text/javascript">
+		/*		$(".test").click(function(){
+					$.ajax({
+						type:"get",
+						url:"/test",
+						success:function(data){
+							console.log(data);
+						}
+					});
+				})*/
+//网络跨域。安装依赖，通过服务器反向代理，前端-服务器-网络
+				// $(".test").click(function(){
+				// 	$.ajax({
+				// 		url:"/herolist.json",
+				// 		dataType:'json',
+				// 		success:function(data){
+				// 			console.log(data);
+				// 		}
+				// 	});
+				// })
+//验证token值
+				$(".test").click(function(){
+				//取出token值传到后端，进行token验证。
+					let token=localStorage.getItem('token');
+					$.ajax({
+						url:"/jiaoyan",
+						type:'post',
+						headers:{token:token},
+						dataType:'json',
+						success:function(data){
+							console.log(data);
+						}
+					});
+				})
+		</script>
+  </body>
+</html>

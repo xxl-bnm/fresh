@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+	<link rel="stylesheet" href="/stylesheets/common.css">
+	<link rel="stylesheet" href="/stylesheets/liuyan.css">
+	<script src="/javascripts/jq.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+	<script src="/javascripts/xheditor/xheditor-1.2.2.min.js"></script>
+	<script src="/javascripts/xheditor/xheditor_lang/zh-cn.js"></script>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1441487_u5fldtgkd4s.css">
+	<style>
+		#title{
+			width: 770px;
+		}
+.content{
+    width:1150px;
+    margin: 10px 10px;
+    padding: 20px 10px;
+    border-bottom: #ececec 1px solid;
+}
+input{
+    width:50px;
+    background: sandybrown;
+    display: block;
+    right: 0;
+    position: absolute;
+}
+#wrap{
+    width: 400px;
+    min-height: 500px;
+     margin-top: 50px;
+}
+#demo{
+   width: 1150px;
+   margin:100px auto;
+}
+.left-con{
+    float: left;
+    width: 770px;
+    background: white;
+}
+.left-con .container,#wrap,textarea,#title{
+    width: 100%;
+}
+	</style>
+</head>
+<body>
+<!-- nav导航 -->
+<div id="h-wrap">
+	<div class="head">
+		<div class="logo">留言板</div>
+		<p onclick="location.href='/relogin'" class="relogin">退出</p> 
+		<ul id="starlist">
+			<li><a href="/" id="selected">网站首页</a></li>
+			<li class=""><a href="/about/">关于我</a></li> 
+			<li class=""><a href="/boke">博客日记</a></li> 
+			<li class=""><a href="/share/">模板分享</a></li> 
+			<li class=""><a href="/study/">学无止境</a></li> 
+			<li class=""><a href="/e/tool/gbook/?bid=1">留言</a></li> 
+		</ul>
+	</div>
+</div>
+<!-- 发布 -->
+<div id="demo">
+	<div class="left-con">
+			<div class="container">
+				<div class="form-group">
+					<label for="content">内容</label>
+					<textarea  id="con" cols="30" rows="10" class="form-control xheditor"></textarea>
+				</div>
+				<button>发布</button>
+			</div>
+			<div id="wrap">
+				<div class="content">
+					<p>123</p>
+					<span>2019-09-29 14:18</span>
+					<span class="iconfont icon-dianzan zan">赞&nbsp;</span>
+					<span>0</span>
+					<span class="iconfont icon-iconfontpiping">踩</span>
+					<span>0</span>
+					<span class="iconfont icon-icon7 delete">删除</span>
+				</div>
+				<div class="content">
+					<p>123</p>
+					<span>2019-09-29 14:18</span>
+					<span class="iconfont icon-dianzan zan">赞&nbsp;</span>
+					<span>0</span>
+					<span class="iconfont icon-iconfontpiping">踩</span>
+					<span>0</span>
+					<span class="iconfont icon-icon7 delete">删除</span>
+				</div>
+				<div class="content">
+					<p>123</p>
+					<span>2019-09-29 14:18</span>
+					<span class="iconfont icon-dianzan zan">赞&nbsp;</span>
+					<span>0</span>
+					<span class="iconfont icon-iconfontpiping">踩</span>
+					<span>0</span>
+					<span class="iconfont icon-icon7 delete">删除</span>
+				</div>
+				<div class="content">
+					<p>123</p>
+					<span>2019-09-29 14:18</span>
+					<span class="iconfont icon-dianzan zan">赞&nbsp;</span>
+					<span>0</span>
+					<span class="iconfont icon-iconfontpiping">踩</span>
+					<span>0</span>
+					<span class="iconfont icon-icon7 delete">删除</span>
+				</div>
+			</div>
+	</div>
+	<!-- 自我介绍 -->
+	<div class="right">
+		<div class="me">
+			<em class="fir-line"></em><h2>关于我</h2><em class="sec-line"></em>
+			<img src="/images/top.jpg" class="person">
+			<div class="ab-con">
+				<span>网名：shiraly</span>
+				<span>职业：Web开发</span>
+				<span>籍贯：河南</span>
+				<span>邮箱：869582448@qq.com</span>
+			</div>
+		</div>
+<!-- 搜搜 -->
+		<div class="search">
+			<input name="keyboard" id="keyboard" class="input_text" value="请输入关键字" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字'}" type="text">
+			<input name="show" value="title" type="hidden">
+			<input name="tempid" value="1" type="hidden">
+			<input name="tbname" value="news" type="hidden">
+			<button name="Submit" class="input_submit" >搜索</button>
+		</div>
+		<div class="links">
+				<em class="fir-line"></em><h2 class="ab_title">友情链接</h2><em class="sec-line"></em>
+				<ul>
+					<li><a href="http://www.yangqq.com" title="杨青个人博客">个人博客</a></li>      
+				</ul>
+		</div>
+		<div class="weixin">
+				<em class="fir-line"></em><h2 class="ab_title">微信关注</h2><em class="sec-line"></em>
+			<ul>
+				<img src="/images/wei.jpg">
+			</ul>
+		</div>
+	</div>
+</div>	
+
+<!-- footer -->
+<div id="f-wrap">
+	<footer>
+		<p>Design by <a href="/">杨青个人博客</a> <a href="/">蜀ICP备11002373号-1</a></p>
+	</footer>
+</div>	
+</body>
+<script src="/javascripts/fwb.js"></script>
+<script type="text/javascript">
+	
+</script>   
+</html>

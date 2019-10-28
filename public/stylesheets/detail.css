@@ -1,0 +1,221 @@
+body{
+    background: #f1f1f1;
+}
+
+#h-wrap{
+    width: 100%;
+    background: #333333;
+    position: fixed;
+    overflow: hidden;
+    z-index: 99;
+}
+.head{
+    height: 40px;
+    margin:auto;
+}
+.head{
+    width: 1100px;
+}
+.logo{
+    overflow: hidden;
+    float: left;
+    color:white;
+}
+
+#starlist{
+    height: 100%;
+    float: right;
+}
+#starlist li{
+    float: left;
+    display: block;
+    padding: 0 0 0 40px;
+    font-size: 16px;
+    line-height: 46px;
+}
+li a{
+    color: #FFF;
+    text-decoration: none;
+}
+#selected{
+    color:#f65a8a;
+}
+.con{
+    width: 1150px;
+    margin:60px auto;
+}
+.leftbox {
+    width: 70%;
+    float: left;
+    overflow: hidden;
+}
+.infos {
+    width: 100%;
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.newsview {
+    padding: 20px;
+}
+.intitle {
+    line-height: 24px;
+    height: 24px;
+    font-size: 14px;
+    border-bottom: #000 2px solid;
+}
+.news_infos {
+    line-height: 24px;
+    padding: 20px 0;
+}
+.news_infos p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+#title-head{
+    font-size: 30px;
+}
+/* 自我简介 */
+.right{
+    width: 308px;
+    float: right;
+}
+.right .me{
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.me h2{
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    font-size: 25px;
+}
+.me em,.links em,.weixin em{
+    display: inline-block;
+    border: 1px solid black;
+    width: 50px;
+}
+ .fir-line{
+    position: absolute;
+    top: 40px;
+    left: 25px;
+}
+.sec-line{
+    position: absolute;
+    top: 40px;
+    right: 25px;
+}
+.person{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50px;
+    margin: auto;
+}
+.ab-con{
+    line-height: 30px;
+    padding: 10px;
+}
+.ab-con span{
+    display: block;
+    background: #f6f6f6;
+    margin: 5px 0;
+    padding-left: 10px;
+    border-radius: 5px;
+    line-height: 30px;
+    font-size: 16px;
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px;
+}
+.search{
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+
+}
+.input_text{
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    width: 70%;
+    height: 26px;
+    line-height: 26px;
+    background-color: #f2f2f2;
+    float: left;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.input_submit{
+    background-color: #333;
+    color: #FFF;
+    float: left;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+}
+.links{
+    width: 100%;
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+    position: relative;
+}
+.ab_title{
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    font-size: 25px;
+}
+.links ul{
+    padding: 0 30px 30px 30px;
+}
+.links ul li{
+    line-height: 24px;
+    border: 1px solid #ccc;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+.links ul li a {
+    color: black;
+    font-size: 16px;
+}
+.weixin{
+    width: 308px;
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+    height: 382px;
+    position: relative;
+}
+.weiixn .ab_title{
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    color: black;
+}
+.weixin ul img{
+    margin-left: 20px;
+}
+footer{
+    width: 100%;
+    background: #333;
+    margin-top: 1160px;
+}
+footer p{
+    color: #a5a4a4;
+    text-align: center;
+    padding: 20px 0;
+    height: 60px;
+    width: 1150px;
+    margin: auto;
+}

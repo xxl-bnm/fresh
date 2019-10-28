@@ -1,0 +1,203 @@
+body{
+    background: #f1f1f1;
+}
+li a{
+    color: #FFF;
+}
+li a:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+#h-wrap{
+    width: 100%;
+    background: #333333;
+    position: fixed;
+    overflow: hidden;
+    z-index: 99;
+}
+.head{
+    height: 40px;
+    margin:auto;
+}
+.head{
+    width: 1100px;
+}
+.logo{
+    overflow: hidden;
+    float: left;
+    color:white;
+    font-size:20px;
+}
+
+#starlist{
+    height: 100%;
+    float: right;
+}
+#starlist li{
+    float: left;
+    display: block;
+    padding: 0 0 0 40px;
+    font-size: 16px;
+    line-height: 46px;
+}
+li a{
+    color: #FFF;
+    text-decoration: none;
+}
+#selected{
+    color:#f65a8a;
+}
+.container{
+    margin-top: 50px;
+    position: relative;
+}
+.fabu{
+    position:absolute;
+    right:20px;
+    bottom:10px;
+}
+.con{
+    width: 1150px;
+    min-height: 200px;
+    margin:0 auto;
+    z-index: -1;
+}
+.newlog{
+    overflow: hidden;
+    background: white;
+    width: 100%;
+    clear: both;
+    border-radius: 10px;
+    min-height: 42px;
+    margin: 20px 0;
+}
+.newlog h1{
+    padding: 0 10px;
+    line-height: 40px;
+    height: 40px;
+    font-size: 18px;
+    border-bottom: #000 2px solid;
+    position: relative;
+}
+.newlog .logtitle{
+    margin: 10px 0;
+    height: 30px;
+    width: 770px;
+}
+.logtitle a{
+    display: block;
+    color:black;
+    font-size: 16px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+.blogpic {
+    overflow: hidden;
+    width: 30%;
+    max-height: 100px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.bloginfo p {
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.autor {
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    margin: 20px 0 0 0;
+    display: inline-block;
+    color: #838383;
+    font-size: 12px;
+    border-bottom:1px solid #f1f1f1;
+}
+.autor span {
+    margin: 0 10px 0 0;
+    padding-left: 20px;
+}
+.f_r {
+    float: right;
+}
+
+.autor .iconfont{
+    font-size: 12px;
+}
+.more{
+    font-size: 14px;
+    width:100px;
+    height: 50px;
+    background:#096; 
+    color: whitesmoke;
+}
+
+.lm {
+    background: url(../images/pensou.jpg) no-repeat left center;
+}
+.dtime {
+    background: url(../images/clock.jpg) no-repeat left center;
+}
+.viewnum {
+    background: url(../images/shou.jpg) no-repeat left center;
+}
+.pingl {
+    background: url(../images/heart.jpg) no-repeat left center;
+}
+.boot{
+    width: 1150px;
+    margin: auto;
+    position: relative;
+}
+.pagination{
+    position: absolute;
+    left: 450px;
+}
+footer p{
+    width: 1150px;
+    margin: auto;
+    color: #a5a4a4;
+    text-align: center;
+    padding: 20px 0;
+    height: 65px;
+}
+#f-wrap{
+    width: 100%;
+    height:62px;
+    background: #333;
+    margin-top: 100px;
+}
+.search{
+    background: #FFF;
+    overflow: hidden;
+    float: left;
+    margin-left: 60px;
+    margin-top: 8px;
+}
+.input_text{
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    width: 70%;
+    height: 26px;
+    line-height: 26px;
+    background-color: #f2f2f2;
+    float: left;
+    outline: none;
+}
+.input_submit{
+    background-color: #333;
+    color: #FFF;
+    float: left;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+    height: 26px;
+    line-height: 28px;
+    outline: none;
+}

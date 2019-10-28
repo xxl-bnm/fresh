@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+	<link rel="stylesheet" href="/stylesheets/login.css">
+	<script src="/javascripts/jq.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+</head>
+<body>
+	<div class="pic">
+		<img src="/images/pic.jpg" alt="">
+	</div>
+	<p class="test">New user ?&nbsp;<a href="/register">Regist here!</a></p>
+	<div class="box">
+		<div class="form">
+			<input type="text" class="form-control" id="username" placeholder="username">
+			<input type="text" class="form-control" id="password" placeholder="Password">
+		</div>
+		<button class="btn btn-success">登陆</button>
+	</div>
+<!-- 发布 -->
+	<table>
+		<tr>
+			<td>序号</td>
+			<td>标题</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		$(function () {
+			$(".btn").click(function () {
+				$.ajax({
+					type: "post",
+					url: "/users/login",
+					data: {
+						username: $("#username").val(),
+						password: md5($("#password").val())
+					},
+					success: function (data) {
+						//console.log(data);
+						if (data.msg == 'success') {
+							//console.log(data);
+							alert(data.msg);
+							//登录成功后，把从后取出的token值存到localStorage里边，
+							localStorage.setItem('token',data.token);
+							location.href = '/';
+						} else {
+							alert(data.msg)
+							location.href = '/login'
+						}
+					}
+				});
+			})
+		})
+	</script>
+</body>
+
+</html>
