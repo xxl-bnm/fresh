@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>详情页</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/detail.css"/>
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1441487_ztm44bir5j.css"/>
+	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/detail.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/goodsdetail.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<!--header-->
+<div id="h_wrap">
+	<div class="head">
+		<ul class="l_nav">
+			<li>欢迎来到酒仙</li>
+			<a href=""><li>请登录</li></a>
+			<a href="">	<li>免费注册</li></a>
+		</ul>
+<!--right-->
+		<ul class="r_nav">
+			<li class="underline">
+				<a href="" class="win">我的酒仙</a>
+				<ul>
+					<li><a href="">我的订单</a></li>
+					<li><a href="">物流跟踪</a></li>
+					<li><a href="">我的优惠券</a></li>
+				</ul>
+			</li>
+			<li><a href="" class="red">CEO邮箱</a></li>
+			<li class="iconfont icon-gouwuche"><a href="">购物车</a></li>
+			<li><a href="" class="red">CLUB会员</a><span>|</span></li>
+			<li><a href="">招商入驻</a><span>|</span></li>
+			<li class="iconfont icon-shouji">
+				<a href="" class="phone">手机酒仙</a>
+				<div class="img">
+					<img src="../img/ma.jpg"/>
+				</div>
+			</li>
+			<li class="iconfont icon-xiaosuolvetu"><a href="">网站导航</a></li>
+			<li>客服热线</li>
+			<li class="iconfont icon-icon">
+				<a href="" class="win">客户服务</a>
+				<ul>
+					<li><a href="">我的订单</a></li>
+					<li><a href="">物流跟踪</a></li>
+					<li><a href="">我的优惠券</a></li>
+				</ul>
+			</li>
+			<li class="last"><a href="" class="red">400-617-999</a></li>
+		</ul>
+	</div>
+
+</div>
+<!--头部导航图片-->
+<div class="t_img"></div>
+<!--logo-->
+<div id="l_wrap">
+	<div class="l_go">
+		<div class="ll_img">
+			<img alt="酒仙网" src="http://misc.jiuxian.com/img/newIndexImg/logo.png?20160405" width="137" height="65">
+		</div>
+		<div class="lr_img">
+			<img alt="" src="http://img09.jiuxian.com/bill/2019/0923/feaf6e60afad4369aed24702d45b65bd.gif" width="110" height="65">
+		</div>
+		<form action="http://list.jiuxian.com/search.htm" method="get" class="m_form">
+			<input id="wd" class="search-form" type="text" name="key" value="" maxlength="50" autocomplete="off" placeholder="五粮液"> 
+			<input class="search-btn" type="submit" name="" value="搜&nbsp;索"> 
+			<input id="area" name="area" type="hidden" value="2">
+		</form>
+		<div class="hotWords" style="">
+				<p>
+						<a href="http://list.jiuxian.com/1-2-0-0-0-0-0-0-0-0-0-0.htm#v2" target="_blank">五粮液<s>|</s>
+				</a> 
+						<a href="http://shop.jiuxian.com/brand-382/activity-3376.htm" target="_blank">茅台<s>|</s>
+				</a> 
+						<a href="http://shop.jiuxian.com/brand-41/activity-3399.htm?source=27" target="_blank">酒鬼<s>|</s>
+				</a> 
+						<a href="http://list.jiuxian.com/search.htm?area=2&amp;key=%E6%8B%89%E8%8F%B2" target="_blank">拉菲<s>|</s>
+				</a> 
+						<a href="http://shop.jiuxian.com/brand-381/activity-3106.htm" target="_blank">郎酒<s>|</s>
+				</a> 
+						<a href="http://list.jiuxian.com/2-254-0-0-0-0-0-0-0-0-0-0.htm" target="_blank">黄尾袋鼠<s>|</s>
+				</a> 
+						<a href="http://shop.jiuxian.com/brand-386/activity-3757.htm" target="_blank">水井坊<s>|</s>
+				</a> 
+						<a href="http://list.jiuxian.com/1-14-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0.htm" target="_blank">泸州老窖<s>|</s>
+				</a> 
+						<a href="http://list.jiuxian.com/search.htm?area=2&amp;key=%E5%A5%94%E5%AF%8C" target="_blank">奔富<s>|</s>
+				</a> 
+						<a href="http://shop.jiuxian.com/index-1314.htm" target="_blank">董酒<s></s>
+				</a> 
+					</p>
+			</div>
+			<div class="headerProtect">
+				<a rel="nofollow"></a>
+				<a rel="nofollow"></a>
+				<a rel="nofollow"></a>
+			</div>
+	</div>
+</div>
+<!--nav-->
+<div id="n_wrap">
+	<div class="nav">
+<!--竖向导航-->
+	<div class="r_navlist">
+		<h2>全部商品分类</h2>
+		<ul class="categoryBox clearfix">
+
+<li class="catItem" id="_nowactstr1">
+<div class="catItemCon" name="__home_fenleiyijian">
+<h3 name="tagH" pathname="一键选酒" url="http://www.jiuxian.com/" ishot="true" iszlm="1"><i class="iconfont icon-dianzan1"></i><a target="_blank" href="http://www.jiuxian.com"></a>一键选酒</h3>
+<div class="categoryCon">
+<p><a href="http://shop.jiuxian.com/brand-382/activity-3684.htm?area=2" target="_blank" rel="nofollow">整箱购</a>					
+<a href="http://shop.jiuxian.com/brand-371/activity-679.htm?area=2" target="_blank" rel="nofollow">家乡名酒</a>
+<a href="http://shop.jiuxian.com/brand-371/activity-1069.htm?area=2" target="_blank" rel="nofollow">老酒特卖</a>
+<a href="http://shop.jiuxian.com/brand-371/activity-1069.htm?area=2" target="_blank" rel="nofollow">年份酒</a></p>												
+<p><a href="http://shop.jiuxian.com/index-1171/activity-3211.htm?area=2&amp;isPreview=1#c" target="_blank" rel="nofollow">地域名酒</a>					
+<a href="http://shop.jiuxian.com/index-1171/activity-3405.htm?area=2" target="_blank" rel="nofollow">值得买</a>
+<a href="http://shop.jiuxian.com/brand-371/activity-440.htm?area=2" target="_blank" rel="nofollow">实惠大坛</a>
+<a href="http://shop.jiuxian.com/brand-371/activity-709.htm?area=2" target="_blank" rel="nofollow">有礼有面</a></p>												
+</div>
+</div>
+</li>
+
+
+<li class="catItem bg" id="_nowactstr2">
+<div class="catItemCon" name="__home_fenleibai">
+<h3 name="tagH" pathname="白酒" url="http://list.jiuxian.com/1-0-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2" ishot="false" iszlm="1"><i class="iconfont icon-icon--"></i><a target="_blank" href="http://list.jiuxian.com/1-0-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2">白酒</a></h3>
+<div class="categoryCon">
+<p><a href="http://shop.jiuxian.com/brand-382/activity-3376.htm?area=2" target="_blank">茅台</a>					
+<a href="http://list.jiuxian.com/1-2-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2" target="_blank" class="on">五粮液</a>
+<a href="http://shop.jiuxian.com/brand-41/activity-3399.htm?area=2&amp;source=23" target="_blank" class="on">酒鬼</a>
+<a href="http://list.jiuxian.com/1-4-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2" target="_blank">汾酒</a></p>												
+<p><a href="http://list.jiuxian.com/1-0-0-0-126-0-0-0-0-0-0-0.htm?area=2#v2" target="_blank">浓香型</a>					
+<a href="http://list.jiuxian.com/1-0-0-0-97-0-0-0-0-0-0-0.htm?area=2#v2" target="_blank" class="on">酱香型</a>
+<a href="http://list.jiuxian.com/1-0-0-9500-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2" target="_blank">贵州</a>
+<a href="http://list.jiuxian.com/1-0-0-9485-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2" target="_blank">四川</a></p>												
+</div>
+</div>
+</li>
+
+<li class="catItem" id="_nowactstr3">
+<div class="catItemCon" name="__home_fenleipu">
+<h3 name="tagH" pathname="葡萄酒" url="http://list.jiuxian.com/2-0-0-0-0-0-0-0-0-0-0-0.htm?area=2" ishot="true" iszlm="1"><i class="iconfont icon-icon-test"></i><a target="_blank" href="http://list.jiuxian.com/2-0-0-0-0-0-0-0-0-0-0-0.htm?area=2">葡萄酒</a></h3>
+
+<div class="categoryCon">
+<p><a href="http://list.jiuxian.com/2-0-9437-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0.htm?area=2" target="_blank">法国</a>					
+<a href="http://list.jiuxian.com/2-0-9442-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0.htm?area=2" target="_blank">澳大利亚</a>
+<a href="http://list.jiuxian.com/2-0-9439-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0.htm?area=2" target="_blank">西班牙</a>
+<a href="http://list.jiuxian.com/2-0-9443-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0.htm?area=2" target="_blank">智利</a></p>												
+<p><a href="http://list.jiuxian.com/2-0-9436-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0.htm?area=2" target="_blank">中国</a>					
+<a href="http://list.jiuxian.com/search.htm?v=2&amp;key=%E6%8B%89%E8%8F%B2&amp;isOwn=1&amp;area=2" target="_blank" class="on">拉菲</a>
+<a href="http://list.jiuxian.com/search.htm?v=2&amp;key=%E5%A5%94%E5%AF%8C&amp;isOwn=1&amp;area=2" target="_blank">奔富</a>
+<a href="http://list.jiuxian.com/search.htm?key=%E9%BB%84%E5%B0%BE%E8%A2%8B%E9%BC%A0&amp;area=2" target="_blank">黄尾袋鼠</a></p>												
+</div>
+</div>
+</li>
+
+<li class="catItem bg" id="_nowactstr4">
+<div class="catItemCon" name="__home_fenleiyang">
+<h3 name="tagH" pathname="洋酒" url="http://list.jiuxian.com/4-0-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2" ishot="true" iszlm="1"><i class="iconfont icon-jiubei"></i><a target="_blank" href="http://list.jiuxian.com/4-0-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2">洋酒</a></h3>
+<div class="categoryCon">
+<p><a href="http://list.jiuxian.com/4-110-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2" target="_blank" class="on">马爹利</a>					
+<a href="http://list.jiuxian.com/4-112-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2" target="_blank" class="on">人头马</a>
+<a href="http://list.jiuxian.com/search.htm?key=%E5%B0%8A%E5%B0%BC%E8%8E%B7%E5%8A%A0&amp;area=2" target="_blank">尊尼获加</a>
+<a href="http://list.jiuxian.com/4-109-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2" target="_blank">芝华士</a></p>												
+<p><a href="http://list.jiuxian.com/4-113-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0.htm?area=2" target="_blank" class="on">轩尼诗</a>					
+<a href="http://list.jiuxian.com/search.htm?area=2&amp;keys=%E7%BB%9D%E5%AF%B9" target="_blank" class="on">绝对</a>
+<a href="http://list.jiuxian.com/4-219-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0.htm?area=2" target="_blank">百龄坛</a>
+</p></div>
+</div>
+</li>
+
+<li class="catItem" id="_nowactstr5">
+<div class="catItemCon" name="__home_fenleipi">
+<h3 name="tagH" pathname="啤酒|黄酒|养生酒" url="http://list.jiuxian.com/151-0-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2|http://list.jiuxian.com/95-0-0-0-0-0-0-0-0-0-0-0.htm#v2|http://list.jiuxian.com/6-0-0-0-0-0-0-0-0-0-0-0.htm#v2" ishot="false" iszlm="1"><i class="iconfont icon-jiweijiubei"></i><a target="_blank" href="http://list.jiuxian.com/151-0-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2">啤酒</a>/<a target="_blank" href="http://list.jiuxian.com/95-0-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2">黄酒</a>/<a target="_blank" href="http://list.jiuxian.com/6-0-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2">养生酒</a></h3>
+<div class="categoryCon">
+<p><a href="http://list.jiuxian.com/151-2542-0-0-0-0-0-0-0-0-0-0.htm?area=2" target="_blank" class="on">埃丝伯爵</a>					
+<a href="http://list.jiuxian.com/151-117-0-0-0-0-0-0-0-0-0-0.htm?area=2" target="_blank" class="on">青岛</a>
+<a href="http://list.jiuxian.com/151-3542-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0.htm?area=2" target="_blank" class="on">1664</a>
+<a href="http://list.jiuxian.com/95-144-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2" target="_blank" class="on">古越龙山</a></p>												
+<p><a href="http://list.jiuxian.com/6-407-0-0-0-0-0-0-0-0-0-0.htm?area=2" target="_blank">劲牌</a>					
+<a href="http://list.jiuxian.com/search.htm?key=%E7%8C%8E%E9%B9%B0&amp;cg=151&amp;area=2#v2" target="_blank">猎鹰</a>
+<a href="http://list.jiuxian.com/search.htm?key=%E7%8B%AE%E8%99%8E%E4%BA%89%E9%9C%B8&amp;area=2" target="_blank">狮虎争霸</a>
+</p></div>
+</div>
+</li>
+
+<li class="catItem bg last" id="_nowactstr6">
+<div class="catItemCon" name="__home_fenleishi">
+<h3 name="tagH" pathname="食尚" url="http://list.jiuxian.com/68-0-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2" ishot="false" iszlm="1"><i class="iconfont icon-jiweijiubeigaojiaobei"></i><a target="_blank" href="http://list.jiuxian.com/68-0-0-0-0-0-0-0-0-0-0-0.htm?area=2#v2">食尚</a></h3>
+<div class="categoryCon">
+<p><a href="http://list.jiuxian.com/search.htm?key=%E9%85%92%E5%85%B7&amp;area=2" target="_blank" class="on">酒具</a>					
+<a href="http://list.jiuxian.com/search.htm?key=茶&amp;area=2" target="_blank">茶叶</a>
+<a href="http://list.jiuxian.com/search.htm?key=%E7%94%B5%E5%AD%90%E7%83%9F&amp;area=2" target="_blank" class="on">电子烟</a></p>												
+</div>
+</div>
+</li>
+			            </ul>
+</div>
+	
+<!--横向导航-->
+	<ul class="navlist">
+		<li class="home on"><a name="home_zhudaoshouye" class="channel" id="httpwwwjiuxiancom" href="http://www.jiuxian.com">首页</a></li>
+		<li class="bg-color"><a name="home_zhudao1" class="channel" id="httpshopjiuxiancombrand-386activity-3455htm" href="http://shop.jiuxian.com/brand-386/activity-3455.htm" target="_blank">自营甄选</a></li>
+		<li><a name="home_zhudao2" class="channel" id="httpshopjiuxiancombrand-381activity-3796htm" href="http://shop.jiuxian.com/brand-381/activity-3796.htm" target="_blank">爆品腰斩日</a><span class="hot publicIcon"></span></li>
+		<li><a name="home_zhudao3" class="channel" id="httpwinejiuxiancom" href="http://wine.jiuxian.com" target="_blank">葡萄酒馆</a></li>
+		<li><a name="home_zhudao4" class="channel" id="httpshopjiuxiancomindex-1171activity-3405htm" href="http://shop.jiuxian.com/index-1171/activity-3405.htm" target="_blank">值得买</a><span class="hot publicIcon"></span></li>
+		<li><a name="home_zhudao5" class="channel" id="httpspiritsjiuxiancom" href="http://spirits.jiuxian.com" target="_blank">洋酒馆</a></li>
+		<li><a name="home_zhudao6" class="channel" id="httpshopjiuxiancombrand-382activity-2932htm" href="http://shop.jiuxian.com/brand-382/activity-2932.htm" target="_blank">新品</a><span class="hot publicIcon"></span></li>
+		<li><a name="home_zhudao7" class="channel" id="httpshopjiuxiancombrand-381activity-2207htm" href="http://shop.jiuxian.com/brand-381/activity-2207.htm" target="_blank">CLUB</a></li>
+		<li><a name="home_zhudao8" class="channel" id="httpshopjiuxiancombrand-383activity-3031htm" href="http://shop.jiuxian.com/brand-383/activity-3031.htm" target="_blank">门店加盟</a></li>
+	</ul>
+<!--gif-->
+	<div class="navPromotion">
+		<a name="home_zhugif" href="http://shop.jiuxian.com/brand-392/activity-3898.htm" target="_blank" rel="nofollow"><img src="http://img06.jiuxian.com/bill/2019/0930/344cccb839754d13a83cf79009ec846d.gif" width="120" height="34">
+		</a>
+	</div>
+	</div>
+</div>
+<!--放大镜-->
+<div id="big">
+	<div class="big-box">
+<!--放大镜内容-->
+		<div class="show-box">
+			<div class="show-pic">
+<!--				<img src="http://img06.jiuxian.com/2019/0716/2c5fd6ecd0004a8082ea9382be7f6fb95.jpg"/>
+-->				<div id="bigs"></div>
+			</div>
+			<div class="big-show">
+<!--				<img src="http://img06.jiuxian.com/2019/0716/2c5fd6ecd0004a8082ea9382be7f6fb95.jpg" id="bigimg"/>
+-->			</div>
+			<ul class="show-list">
+		<!--		<li><img src="http://img10.jiuxian.com/2019/0716/362f39db0c614edba89984293a3b9dcb5.jpg"></li>	
+				<li><img src="http://img08.jiuxian.com/2019/0716/ba263d405a374bddaa8f88189de3db525.jpg"></li>
+				<li><img src="http://img09.jiuxian.com/2019/0716/bbfac7baf70742e69d95564bfc7908765.jpg"></li>
+				<li><img src="http://img06.jiuxian.com/2019/0716/97a61759b3cb4a3a9f00f775bf5f5e305.jpg"></li>	-->
+			</ul>
+			<div class="showOther">
+                <div class="goodsNo">商品编号：<span>tz009658</span></div>
+                <div class="sOtherRight">
+                    <div class="showCollect">
+                    	<a><i class="iconfont icon-dianzan1"></i>
+                    		<span>收藏
+						                            （<em>0</em>）
+						   </span>
+                    	</a>
+                    </div>
+                    <div class="showShare sShare-list"><i class="iconfont icon-fenxiang"></i><span>分享</span>
+                        <div class="bshare-custom">
+                            <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis" rel="nofollow"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+<!--展示信息-->		
+<div class="introInfo">
+            <div class="comName">
+             <!--   <h1>
+                    52°小糊涂神250ml（双瓶装）
+                </h1>-->
+           		<p>聪明人生 难得糊涂</p>
+            </div>
+            <div class="presaleTitle" id="presell_activity_title" style="display: none">
+                <div class="presaleTitleLeft"><i class="presaleTitleImg"></i><span>预售中</span><span id="presell_total_sales"></span></div>
+            </div>
+
+            <div class="infoWrap comSummary clearfix" id="price_and_promo">
+                <div class="infoItems priJXBox" style="">
+                    <div class="infoTit">酒仙价</div>
+                    <div class="infoCon infoPrijx"><del>￥98.00</del></div>
+                </div>
+                <div class="infoItems priceBox">
+                    <div class="infoTit cuxiao">促销价</div>
+<!--                    <div class="infoCon infoPri" id="nowPrice"><span class="pri"><em>￥</em><strong>58.00</strong></span><span class="tim" style="display:none;"></div>
+-->                	<div id="promotionInfo" class="infoItems promotionBox" style=""><div class="infoTit">促　销</div><div class="infoCon infoProm"><ul><li class="promItem"><i class="prom-h" style="background:#ff0000">限时抢购</i><span class="prom-n">限时抢购</span></li></ul></div></div>
+            	</div>
+            <div class="infoWrap comSummary clearfix mt0" id="detail_presell_price" style="display: none">
+                <div class="infoItems priceBox">
+                    <div class="infoTit">预售价</div>
+                    <div class="infoCon infoPri"><span class="pri"><em>￥</em><strong id="presell_price"></strong></span></div>
+                </div>
+            </div>
+            <!-- 预售价格 start -->
+
+            <div class="infoWrap comChooseBay clearfix">
+
+            <div class="infoItems cityBox">
+                    <div class="infoTit">配送到</div>
+                    <div class="infoCon infoCity">
+                        <div class="citySelect">
+                            <a name="detail_dizhi" class="dOrder-city-sel" href="javascript:;"><b pid="2">北京</b><b></b><b></b><i class="dIcon"></i></a><strong>有货！</strong>
+                        </div>
+                        <span class="deliveryTime" id="presell_delivery_date" style="display: none">
+							<i class="dIcon"></i><em id="presell_delivery_date_em">预计2019年7月19号发货</em>
+						</span>
+                    </div>
+                </div>
+					 <div class="infoItems chooseBox">
+                        <div class="infoTit">选　择</div>
+                        <div class="infoCon infoChoose">
+                            <ul class="clearfix">
+								<li class="choItem">
+									<a href=""><img src="http://img07.jiuxian.com/2019/0716/362f39db0c614edba89984293a3b9dcb2.jpg" title="52°小糊涂神250ml" width="30" height="30">
+									<span>52°小糊涂神250ml</span><i class="dIcon"></i>	
+									</a>
+								</li>
+								<li class="choItem on"><a href=""><img src="http://img07.jiuxian.com/2019/0716/bbfac7baf70742e69d95564bfc7908762.jpg" title="52°小糊涂神250ml（双瓶装）" width="30" height="30"><span>52°小糊涂神250ml（双瓶装）</span><i class="dIcon"></i></a></li>
+								<li class="choItem"><a href=""><img src="http://img07.jiuxian.com/2019/0716/9e07489c65144ca589ec094a73cddde42.jpg" title="52°小糊涂神250ml*7" width="30" height="30"><span>52°小糊涂神250ml*7</span><i class="dIcon"></i></a></li>
+								<li class="choItem"><a href=""><img src="http://img09.jiuxian.com/2019/0716/548c8e82369d4a1f8102e6f8e50b31ed2.jpg" title="52°小糊涂神250ml(12瓶装)" width="30" height="30"><span>52°小糊涂神250ml(12瓶装)</span><i class="dIcon"></i></a></li>
+							</ul>
+                        </div>
+                    </div>
+				    <div class="infoItems bayNumBox">
+                    <div class="infoTit">数　量</div>
+                    <div class="infoCon infoBuyNum">
+                        <div class="buyNum">
+                        	<input type="text" id="_nub" value="1" onkeyup="gv_renum();">
+                        	<p class="buyNum-btn add">+</p>
+                        	<p class="buyNum-btn reduce">-</p>
+                        </div>
+                        <div class="buyPro"></div>
+                    </div>
+                </div>
+                
+                <!-- 跳转新疆专区区域 end-->
+                <div class="infoItems bayBtnBox">
+                    <div class="infoCon infoBuy" id="btnDetail">
+                         <a id="buyNow" class="buyBtn buyBtn-bay loginNow" href="javascript:;" style="display:none">立即购买</a>
+                       	 <a name="detail_jiarugouwuche" id="addToCartForDetail" href="javascript:;" class="buyBtn buyBtn-cart">加入购物车</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+	</div>
+		<div class="big-other"></div>
+</div>
+
+</body>
+</html>

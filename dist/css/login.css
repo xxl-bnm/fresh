@@ -1,0 +1,162 @@
+body {
+  background: white; }
+
+.head, .banner, .footer {
+  width: 1000px;
+  margin: auto; }
+
+#h_wrap {
+  width: 100%; }
+
+.head {
+  height: 88px;
+  position: relative;
+  background: url(../img/logo.jpg) no-repeat 0 15px;
+  overflow: hidden; }
+  .head .l_test {
+    width: 100px;
+    height: 50px;
+    border-left: 2px solid #e1ddde;
+    margin-top: 23px;
+    margin-left: 140px; }
+    .head .l_test p {
+      text-indent: 10px;
+      line-height: 22px;
+      font-size: 18px; }
+      .head .l_test p:first-child {
+        color: #bf1a20; }
+  .head .r_test {
+    position: absolute;
+    right: 8px;
+    top: 48px; }
+    .head .r_test span {
+      display: block;
+      float: left;
+      margin-right: 20px; }
+      .head .r_test span:first-child {
+        color: #999999; }
+      .head .r_test span:nth-of-type(2) a {
+        color: #0066cc; }
+      .head .r_test span:nth-of-type(3) {
+        z-index: 1; }
+
+.f_wrap {
+  width: 100%;
+  background: #fafafa; }
+  .f_wrap .footer {
+    height: 150px; }
+    .f_wrap .footer p {
+      text-align: center;
+      line-height: 150px;
+      color: #666666; }
+
+#b_wrap {
+  width: 100%;
+  background: url(https://img10.jiuxian.com/bill/2019/0926/591603dd97ef44ff9ace03bcb0163642.jpg) no-repeat center; }
+  #b_wrap .banner {
+    position: relative;
+    height: 598px; }
+    #b_wrap .banner form {
+      position: absolute;
+      width: 270px;
+      padding: 16px 40px;
+      height: 374px;
+      background: white;
+      right: 0;
+      top: 100px; }
+      #b_wrap .banner form .top {
+        width: 272px;
+        border-bottom: 1px solid #e9e9e9;
+        padding-bottom: 12px;
+        overflow: hidden; }
+        #b_wrap .banner form .top p {
+          color: red;
+          font-size: 14px;
+          height: 19px;
+          position: absolute;
+          top: 50px;
+          left: 95px;
+          display: none; }
+        #b_wrap .banner form .top span {
+          font-size: 16px;
+          font-weight: bold;
+          margin-right: 16px;
+          margin-top: 10px; }
+          #b_wrap .banner form .top span:nth-of-type(1) {
+            color: #e8393c; }
+          #b_wrap .banner form .top span:nth-of-type(2), #b_wrap .banner form .top span:nth-of-type(3) {
+            color: #999999; }
+      #b_wrap .banner form .demo .f_test, #b_wrap .banner form .demo .s_test, #b_wrap .banner form .demo .t_test, #b_wrap .banner form .demo .btn {
+        width: 270px;
+        height: 40px;
+        border: 1px solid #dcdcdc;
+        margin-top: 19px; }
+        #b_wrap .banner form .demo .f_test .iconfont, #b_wrap .banner form .demo .s_test .iconfont, #b_wrap .banner form .demo .t_test .iconfont, #b_wrap .banner form .demo .btn .iconfont {
+          display: inline-block;
+          width: 44px;
+          height: 100%;
+          border-right: 1px solid #dcdcdc;
+          background: #f3f3f3;
+          float: left;
+          text-align: center;
+          line-height: 44px; }
+        #b_wrap .banner form .demo .f_test input, #b_wrap .banner form .demo .s_test input, #b_wrap .banner form .demo .t_test input, #b_wrap .banner form .demo .btn input {
+          display: inline-block;
+          text-indent: 10px;
+          line-height: 44px; }
+      #b_wrap .banner form .demo .btn {
+        background: #e10303;
+        color: white;
+        font-size: 15px; }
+      #b_wrap .banner form .bottom {
+        width: 270px;
+        height: 40px;
+        border-bottom: 1px dashed #dcdcdc;
+        color: #999999;
+        font-weight: bold; }
+        #b_wrap .banner form .bottom .login {
+          font-style: normal;
+          display: inline-block;
+          line-height: 40px; }
+        #b_wrap .banner form .bottom span {
+          display: inline-block;
+          float: right;
+          line-height: 40px;
+          margin-left: 14px; }
+        #b_wrap .banner form .bottom .regist {
+          color: #5d66d4; }
+      #b_wrap .banner form .foot {
+        height: 63px; }
+        #b_wrap .banner form .foot span {
+          color: #bfb3a6;
+          height: 100%;
+          display: inline-block;
+          line-height: 63px;
+          float: left; }
+        #b_wrap .banner form .foot ul {
+          width: 173px;
+          height: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+          #b_wrap .banner form .foot ul li {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #cccccc; }
+            #b_wrap .banner form .foot ul li span {
+              display: inline-block;
+              margin-left: 7px;
+              line-height: 30px; }
+
+.user {
+  color: red;
+  margin-top: 10px;
+  display: none; }
+
+.delete {
+  position: absolute;
+  display: block;
+  left: 100px;
+  color: red;
+  font-size: 14px; }

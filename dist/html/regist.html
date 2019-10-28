@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="../css/regist.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1441487_afn6xk3ghw6.css"/>
+	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/regist.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<!--header-->
+<div id="h_wrap">
+	<div class="head">
+		<div class="l_test">
+			<p>买真酒</p>
+			<p>就上酒仙网</p>
+		</div>
+		<div class="r_test">
+			<span>欢迎登录酒仙网!</span>
+			<span><a href="login.html">请登录</a></span>
+			<span class="help">帮助中心</span>
+		</div>
+	</div>
+</div>
+<!--banner-->
+<div id="b_wrap">
+	<div class="banner">
+		<form action="" method="post" class="demo">
+			<div class="main">
+				<em>手机号</em>
+				<div class="f_test">
+			  		<span class="iconfont icon-icon"></span>
+			  		<input type="text" name="username" id="username" />
+			  	</div>
+			  	<em>邮箱</em>
+		  		<div class="s_test">
+		  			<span class="iconfont icon-yanzhengma"></span>
+		  			<input type="text" name="trans" id="trans"/>
+		  		</div>
+		  		<!--<em>校验码</em>
+		  		<div class="j_test">
+		  			<span class="iconfont icon-yanzhengma"></span>
+		  			<input type="text" name="trans" id="trans"/>
+		  		</div>
+		  		<div class="r_j">获取短信验证码</div>-->
+		  		<em>性别</em>
+		  		<div class="t_test">
+		  			<span class="iconfont icon-mima"></span>
+		  			<input type="text" name="password" id="sex" />
+		  		</div>
+		  		<em>密码</em>
+		  		<div class="f_test">
+		  			<span class="iconfont icon-mima"></span>
+		  			<input type="text" name="sex" id="password" />
+		  		</div>
+		  		<input type="checkbox" name="" id="check"/>我已阅读并同意《酒仙网用户协议》
+		  		<input type="button" value="立即注册" class="btn"/>
+			</div>
+		</form>
+		<div class="l_form">
+			<div class="l_div">个人用户注册</div>
+		</div>
+		<div class="r_div"><a href="">企业用户注册</a></div>
+		<div class="r_form"></div>
+	</div>
+</div>
+<!--fooetr-->
+<div class="f_wrap">
+	<div class="footer">
+		<p>©  酒仙网  2011 jiuxian.com All  Rights Reserved  京ICP证110141号  京公网安备1101050188221</p>
+	</div>
+</div>
+<!--<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function(){		
+			checkregist();
+			return false;
+		})
+//判断勾选复选框
+			function checkregist(){
+				if($("#username").val() == "" || $("#trans").val() == ""){
+					alert("不能为空")
+				}else if($("input").prop("checked") == false){
+					alert("请同意")
+					return false;
+				}
+			$.ajax({
+			type:"post",
+			url:"http://47.104.244.134:8080/usersave.do",
+			data:{
+				username:$("#username").val(),
+				password:$("#password").val(),
+				email:$("#trans").val(),
+				sex:$("#sex").val()
+			},
+			success:function(data){
+				if(data.code == 0){
+					window.location.href ="login.html";
+				}else{
+					$("<p>用户名或邮箱重复<p>").prependTo(".main");
+				}
+			}
+		});
+	}
+})
+</script>-->
+</body>
+</html>

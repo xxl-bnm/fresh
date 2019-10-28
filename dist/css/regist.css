@@ -1,0 +1,173 @@
+body {
+  background: white; }
+
+.head, .banner, .footer {
+  width: 1000px;
+  margin: auto; }
+
+#h_wrap {
+  width: 100%; }
+
+.head {
+  height: 88px;
+  position: relative;
+  background: url(../img/logo.jpg) no-repeat 0 15px;
+  overflow: hidden; }
+  .head .l_test {
+    width: 100px;
+    height: 50px;
+    border-left: 2px solid #e1ddde;
+    margin-top: 23px;
+    margin-left: 140px; }
+    .head .l_test p {
+      text-indent: 10px;
+      line-height: 22px;
+      font-size: 18px; }
+      .head .l_test p:first-child {
+        color: #bf1a20; }
+  .head .r_test {
+    position: absolute;
+    right: 8px;
+    top: 48px; }
+    .head .r_test span {
+      display: block;
+      float: left;
+      margin-right: 20px; }
+      .head .r_test span:first-child {
+        color: #999999; }
+      .head .r_test span:nth-of-type(2) a {
+        color: #0066cc; }
+      .head .r_test span:nth-of-type(3) {
+        z-index: 1; }
+
+.f_wrap {
+  width: 100%;
+  background: #fafafa; }
+  .f_wrap .footer {
+    height: 150px; }
+    .f_wrap .footer p {
+      text-align: center;
+      line-height: 150px;
+      color: #666666; }
+
+#b_wrap {
+  width: 100%;
+  background: url(../img/bg.jpg);
+  margin-bottom: 20px; }
+  #b_wrap .banner {
+    height: 565px;
+    overflow: hidden;
+    position: relative; }
+    #b_wrap .banner .demo {
+      width: 740px;
+      height: 500px;
+      background: white;
+      margin-top: 70px;
+      float: left;
+      border-top: 3px solid #eaeaea;
+      border-left: 3px solid #eaeaea; }
+    #b_wrap .banner .main {
+      width: 400px;
+      height: 370px;
+      position: absolute;
+      top: 70px;
+      left: 290px;
+      padding: 70px 50px 60px 0; }
+      #b_wrap .banner .main em {
+        display: inline-block;
+        float: left;
+        font-style: normal;
+        position: absolute; }
+      #b_wrap .banner .main .j_test {
+        width: 144px;
+        height: 40px;
+        border: 1px solid #dcdcdc;
+        margin-top: 25px; }
+        #b_wrap .banner .main .j_test .iconfont {
+          display: inline-block;
+          width: 44px;
+          height: 100%;
+          border-right: 1px solid #dcdcdc;
+          background: #f3f3f3;
+          float: left;
+          text-align: center;
+          line-height: 44px; }
+        #b_wrap .banner .main .j_test input {
+          display: inline-block;
+          text-indent: 10px;
+          line-height: 44px;
+          float: left;
+          margin-top: -45px;
+          margin-left: 40px; }
+      #b_wrap .banner .main .r_j {
+        width: 144px;
+        height: 40px;
+        border: 1px solid #dcdcdc;
+        float: left;
+        margin-left: 155px;
+        margin-top: -42px;
+        background: #eaeaea;
+        text-align: center;
+        line-height: 40px; }
+      #b_wrap .banner .main .f_test, #b_wrap .banner .main .s_test, #b_wrap .banner .main .t_test, #b_wrap .banner .main .f_test, #b_wrap .banner .main .btn {
+        width: 270px;
+        height: 40px;
+        border: 1px solid #dcdcdc;
+        margin-top: 25px; }
+        #b_wrap .banner .main .f_test .iconfont, #b_wrap .banner .main .s_test .iconfont, #b_wrap .banner .main .t_test .iconfont, #b_wrap .banner .main .f_test .iconfont, #b_wrap .banner .main .btn .iconfont {
+          display: inline-block;
+          width: 44px;
+          height: 100%;
+          border-right: 1px solid #dcdcdc;
+          background: #f3f3f3;
+          float: left;
+          text-align: center;
+          line-height: 44px; }
+        #b_wrap .banner .main .f_test input, #b_wrap .banner .main .s_test input, #b_wrap .banner .main .t_test input, #b_wrap .banner .main .f_test input, #b_wrap .banner .main .btn input {
+          display: inline-block;
+          text-indent: 10px;
+          line-height: 44px; }
+      #b_wrap .banner .main #check {
+        margin-top: 20px; }
+      #b_wrap .banner .main .btn {
+        background: #e10303;
+        color: white;
+        font-size: 15px; }
+    #b_wrap .banner .l_form {
+      width: 114px;
+      height: 535px;
+      background: white;
+      margin-top: 35px;
+      float: left;
+      border-top: 3px solid #eaeaea; }
+      #b_wrap .banner .l_form .l_div {
+        border-left: 3px solid #eaeaea;
+        border-right: 3px solid #eaeaea;
+        color: #ff993f;
+        width: 114px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px; }
+    #b_wrap .banner .r_div {
+      background: #ff9900;
+      position: absolute;
+      right: 18px;
+      top: 35px;
+      color: white;
+      width: 114px;
+      height: 35px;
+      text-align: center;
+      line-height: 35px;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px; }
+    #b_wrap .banner .r_form {
+      width: 135px;
+      height: 530px;
+      background: white;
+      margin-top: 70px;
+      float: left;
+      border-top: 3px solid #eaeaea;
+      border-right: 3px solid #eaeaea;
+      border-top-right-radius: 5px; }
